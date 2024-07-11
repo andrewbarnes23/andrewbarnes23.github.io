@@ -1,21 +1,30 @@
- 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "title": {
-    "text":"Real GDP Per Capita BY SELECT COUNTRIES",
-    "subtitle": ["Current International USD, PPP", "Source: World Bank"]},
-
-  "width": 400,
-  "height": 300,
  
-  "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/1/s1_example_data/chart2_GDP_pc_6_countries.csv"},
+  "title": {"text": "GDP Per Capita"},
  
-  "mark": "line",
+  "width": 800,
+  "height": 400,
+   
+  "data": {
+    "values": [
+        {"Country": "France","GDP per capita": 40886.25},
+        {"Country": "Germany","GDP per capita": 48717.99},
+        {"Country": "UK","GDP per capita": 54929},
+        {"Country": "Italy","GDP per capita": 34776.42},
+        {"Country": "Japan","GDP per capita": 33823.57},
+        {"Country": "USA","GDP per capita": 76329}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "blue"},
  
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "title":null},
-    "y": {"field": "GDP pc", "type": "quantitative", "title":null},
-    "color": {"field": "Country Name", "type": "ordinal"}
-  }
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
 }
+ 
