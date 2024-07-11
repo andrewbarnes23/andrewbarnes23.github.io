@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A map of UK economic inactivity by ITL3 (formerly NUTS3) region. Using ONS 2019 data.",
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/uk_itl3.geojson",
+      "format": {"property": "features"}
+    },
+    "width": 400,
+    "height": 400,
+  
+    "transform": [
+      {
+        "lookup": "properties[ITL321CD]",
+        "from":{
+          "key": "ITL code",
+          "fields": ["name","value"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/4/map_data/uk_itl3_population.csv"}
+          }
+      }
+    ],
+    
+    "mark": {
+      "type": "geoshape"
+      },
+    "encoding": {
+      "color":{
+        "field": "value",
+        "type":"quantitative",
+        "scale":{"scheme":"greens"}
+        }
+    }
+    }
