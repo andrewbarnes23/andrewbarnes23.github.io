@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "title": {"text": "GDP Per Capita"},
+   
+    "width": 800,
+    "height": 400,
+     
+    "data": {
+      "values": [
+          {"Country": "France","GDP per capita": 40886.25},
+          {"Country": "Germany","GDP per capita": 48717.99},
+          {"Country": "UK","GDP per capita": 54929},
+          {"Country": "Italy","GDP per capita": 34776.42},
+          {"Country": "Japan","GDP per capita": 33823.57},
+          {"Country": "USA","GDP per capita": 76329}]
+    },
+   
+    "mark": {
+      "type": "bar",
+      "color": "blue"},
+   
+    "encoding": {
+      "x": {"field": "Country"},  
+   
+      "y": {
+        "field": "GDP per capita",
+        "type": "quantitative"}}
+  }
+   

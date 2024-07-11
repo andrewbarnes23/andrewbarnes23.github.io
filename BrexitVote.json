@@ -1,0 +1,500 @@
+{
+    "config": {
+      "font": "Circular Std",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 11
+      },
+      "view": {
+        "stroke": null,
+        "continuousWidth": 400,
+        "continuousHeight": 300,
+        "discreteWidth": 400,
+        "discreteHeight": 300
+      },
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "bar": {"color": "#179fdb"},
+      "line": {"color": "#e6224b"},
+      "rule": {"color": "#676A86"},
+      "area": {"opacity": 0.3},
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXTemporal": {"grid": false, "ticks": true},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "title": {
+        "color": "#122b39E6",
+        "subtitleColor": "#676A86",
+        "font": "Circular Std",
+        "subtitleFont": "Circular Std",
+        "anchor": "start",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    },
+    "layer": [
+      {
+        "data": {"name": "data-6e607b9ac8d77a72504966040bffc65f"},
+        "mark": {"type": "area", "opacity": 0.65},
+        "encoding": {
+          "color": {
+            "field": "Party",
+            "legend": {"offset": 2},
+            "scale": {
+              "range": [
+                "#0073e6",
+                "#8dc63f",
+                "#d50000",
+                "#FDBB30",
+                "#cccccc",
+                "purple"
+              ]
+            },
+            "type": "nominal"
+          },
+          "x": {
+            "axis": {"format": "%", "grid": false, "tickCount": 6},
+            "field": "LeavePct",
+            "scale": {"domain": [0.16, 0.8], "nice": true},
+            "title": "Predicted leave vote",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "VoteShare",
+            "stack": "normalize",
+            "title": "Party vote share",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "data": {"name": "data-3a10ac337a97dc375e4824a97342d683"},
+        "mark": {
+          "type": "rule",
+          "color": "dimgrey",
+          "size": 2,
+          "strokeDash": [4, 2],
+          "xOffset": 1.5
+        },
+        "encoding": {"x": {"field": "x", "type": "quantitative"}}
+      }
+    ],
+    "height": 280,
+    "width": 430,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+    "datasets": {
+      "data-6e607b9ac8d77a72504966040bffc65f": [
+        {
+          "LeavePct": 0.181569107625616,
+          "Party": "Conservative",
+          "VoteShare": 0.07875
+        },
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Conservative",
+          "VoteShare": 0.09867222222222222
+        },
+        {
+          "LeavePct": 0.28458901221119426,
+          "Party": "Conservative",
+          "VoteShare": 0.188375
+        },
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Conservative",
+          "VoteShare": 0.118884
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Conservative",
+          "VoteShare": 0.1364695652173913
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Conservative",
+          "VoteShare": 0.21662280701754386
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Conservative",
+          "VoteShare": 0.2747711111111111
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Conservative",
+          "VoteShare": 0.25487131147540987
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Conservative",
+          "VoteShare": 0.2620935483870968
+        },
+        {
+          "LeavePct": 0.6334338381183962,
+          "Party": "Conservative",
+          "VoteShare": 0.26701625
+        },
+        {
+          "LeavePct": 0.6825949632735296,
+          "Party": "Conservative",
+          "VoteShare": 0.2530575
+        },
+        {
+          "LeavePct": 0.7177233366731585,
+          "Party": "Conservative",
+          "VoteShare": 0.25577500000000003
+        },
+        {
+          "LeavePct": 0.761919691665627,
+          "Party": "Conservative",
+          "VoteShare": 0.334
+        },
+        {
+          "LeavePct": 0.181569107625616,
+          "Party": "Labour",
+          "VoteShare": 0.5181250000000001
+        },
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Labour",
+          "VoteShare": 0.4875333333333334
+        },
+        {"LeavePct": 0.28458901221119426, "Party": "Labour", "VoteShare": 0.3716},
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Labour",
+          "VoteShare": 0.446672
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Labour",
+          "VoteShare": 0.3793543478260869
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Labour",
+          "VoteShare": 0.3406578947368421
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Labour",
+          "VoteShare": 0.3111422222222222
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Labour",
+          "VoteShare": 0.33937049180327866
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Labour",
+          "VoteShare": 0.34652499999999997
+        },
+        {"LeavePct": 0.6334338381183962, "Party": "Labour", "VoteShare": 0.36965},
+        {
+          "LeavePct": 0.6825949632735296,
+          "Party": "Labour",
+          "VoteShare": 0.38706999999999997
+        },
+        {
+          "LeavePct": 0.7177233366731585,
+          "Party": "Labour",
+          "VoteShare": 0.33959999999999996
+        },
+        {"LeavePct": 0.761919691665627, "Party": "Labour", "VoteShare": 0.1886},
+        {
+          "LeavePct": 0.181569107625616,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.08360000000000001
+        },
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.10682777777777779
+        },
+        {
+          "LeavePct": 0.28458901221119426,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.19148333333333334
+        },
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.10738400000000001
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.1447695652173913
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.15480350877192983
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.17232555555555557
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.1316581967213115
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.10275322580645162
+        },
+        {
+          "LeavePct": 0.6334338381183962,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.0615025
+        },
+        {
+          "LeavePct": 0.6825949632735296,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.041475
+        },
+        {
+          "LeavePct": 0.7177233366731585,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.04224166666666667
+        },
+        {
+          "LeavePct": 0.761919691665627,
+          "Party": "Liberal Democrats",
+          "VoteShare": 0.034
+        },
+        {
+          "LeavePct": 0.181569107625616,
+          "Party": "Reform UK",
+          "VoteShare": 0.03605
+        },
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Reform UK",
+          "VoteShare": 0.04785
+        },
+        {
+          "LeavePct": 0.28458901221119426,
+          "Party": "Reform UK",
+          "VoteShare": 0.05755833333333333
+        },
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Reform UK",
+          "VoteShare": 0.05662
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Reform UK",
+          "VoteShare": 0.08085652173913042
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Reform UK",
+          "VoteShare": 0.08877719298245614
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Reform UK",
+          "VoteShare": 0.11762
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Reform UK",
+          "VoteShare": 0.15179426229508194
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Reform UK",
+          "VoteShare": 0.1822209677419355
+        },
+        {
+          "LeavePct": 0.6334338381183962,
+          "Party": "Reform UK",
+          "VoteShare": 0.20637625
+        },
+        {
+          "LeavePct": 0.6825949632735296,
+          "Party": "Reform UK",
+          "VoteShare": 0.2431275
+        },
+        {
+          "LeavePct": 0.7177233366731585,
+          "Party": "Reform UK",
+          "VoteShare": 0.27668333333333334
+        },
+        {
+          "LeavePct": 0.761919691665627,
+          "Party": "Reform UK",
+          "VoteShare": 0.3836
+        },
+        {"LeavePct": 0.181569107625616, "Party": "Green", "VoteShare": 0.2681},
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Green",
+          "VoteShare": 0.1351388888888889
+        },
+        {
+          "LeavePct": 0.28458901221119426,
+          "Party": "Green",
+          "VoteShare": 0.12773333333333334
+        },
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Green",
+          "VoteShare": 0.114156
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Green",
+          "VoteShare": 0.0685695652173913
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Green",
+          "VoteShare": 0.06425087719298246
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Green",
+          "VoteShare": 0.06531222222222222
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Green",
+          "VoteShare": 0.06938934426229508
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Green",
+          "VoteShare": 0.06480564516129032
+        },
+        {"LeavePct": 0.6334338381183962, "Party": "Green", "VoteShare": 0.05602},
+        {"LeavePct": 0.6825949632735296, "Party": "Green", "VoteShare": 0.04662},
+        {"LeavePct": 0.7177233366731585, "Party": "Green", "VoteShare": 0.04495},
+        {"LeavePct": 0.761919691665627, "Party": "Green", "VoteShare": 0.0372},
+        {
+          "LeavePct": 0.181569107625616,
+          "Party": "Others",
+          "VoteShare": 0.0153749999999999
+        },
+        {
+          "LeavePct": 0.23945359093549287,
+          "Party": "Others",
+          "VoteShare": 0.12397777777777777
+        },
+        {
+          "LeavePct": 0.28458901221119426,
+          "Party": "Others",
+          "VoteShare": 0.06325
+        },
+        {
+          "LeavePct": 0.33338302024162336,
+          "Party": "Others",
+          "VoteShare": 0.15628399999999998
+        },
+        {
+          "LeavePct": 0.3847182832639013,
+          "Party": "Others",
+          "VoteShare": 0.18998043478260868
+        },
+        {
+          "LeavePct": 0.4345351473015256,
+          "Party": "Others",
+          "VoteShare": 0.1348877192982456
+        },
+        {
+          "LeavePct": 0.48417176888101116,
+          "Party": "Others",
+          "VoteShare": 0.05882888888888889
+        },
+        {
+          "LeavePct": 0.5339161059543919,
+          "Party": "Others",
+          "VoteShare": 0.052916393442622944
+        },
+        {
+          "LeavePct": 0.584271142851671,
+          "Party": "Others",
+          "VoteShare": 0.041601612903225796
+        },
+        {
+          "LeavePct": 0.6334338381183962,
+          "Party": "Others",
+          "VoteShare": 0.03943499999999999
+        },
+        {"LeavePct": 0.6825949632735296, "Party": "Others", "VoteShare": 0.02865},
+        {"LeavePct": 0.7177233366731585, "Party": "Others", "VoteShare": 0.04075},
+        {"LeavePct": 0.761919691665627, "Party": "Others", "VoteShare": 0.0226}
+      ],
+      "data-3a10ac337a97dc375e4824a97342d683": [{"x": 0.5}]
+    }
+  }
